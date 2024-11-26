@@ -1,99 +1,128 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
+body {
+    color: black;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    width: 940px;
 }
 
-
-#formulario{
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    margin: 0;
+p {
+    padding: 0 45px;
+    text-indent: 15px;
 }
 
 h1{
     text-align: center;
 }
 
-.container {
-    background-color: white;
-    padding: 20px;
-    max-width: 100%;
-    width: 100%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    margin: 20px;
-    max-width: 600px;
+h3 {
+    margin: 0;
+    /* Remove margens para alinhar corretamente */
+    color: white;
 }
 
-
-.text-center {
+header {
+    position: fixed;
+    /* Fixa no topo da página */
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* Largura total */
+    background-color: #ec71e2;
+    /* Cor de fundo */
+    padding: 35px;
     text-align: center;
-    margin-bottom: 20px;
+    /* Centraliza os textos horizontalmente */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Sombra*/
+    z-index: 1000;
+    /* Garante que fique acima de outros elementos */
 }
 
-
-.form-group {
-    margin-bottom: 15px;
-}
-
-
-label {
-    display: block;
-    margin-bottom: 5px;
-}
-
-
-input[type="falhas"],
-input[type="email"],
-select {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
-}
-
-
-button {
-    padding: 10px 15px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-    margin-right: 10px;
-}
-
-
-.btn-primary {
-    background-color: #007bff;
+a {
     color: white;
+    /* Cor padrão do link */
+    text-decoration: none;
+    /* Remove o sublinhado */
 }
 
+a:hover {
+    color: pink;
 
-.btn-secondary {
-    background-color: #6c757d;
-    color: white;
+    /* Cor ao passar o mouse */
+    text-decoration: underline;
+    /* Adiciona sublinhado */
 }
 
-
-button:hover {
-    opacity: 0.8;
+a:active {
+    color: rgb(95, 173, 247);
+    /* Cor quando o link é clicado */
 }
 
+.subtitulos {
+    display: flex;
+    /* Usa flexbox para alinhar */
+    justify-content:center;
+    /* Centraliza os subtítulos no eixo horizontal */
+    gap: 20px;
+    /* Espaço entre os subtítulos */
+    flex-wrap: wrap;
+    /* Permite quebrar linha se necessário */
+}
 
-/* Responsividade */
+main {
+    margin-top: 150px;
+    /* Garante que o conteúdo não fique sobreposto ao header */
+    padding: 20px;
+}
+
+figure {
+    background-color: rgb(173, 214, 250);
+    border: 1px solid skyblue;
+    text-align: center;
+    padding: 5px;
+    margin: 20px;
+}
+
+figcaption {
+    font-style: italic;
+    margin-top: 2px;
+}
+
+#sindy{
+    float: right;
+    margin: 0 0 5px 5px;
+}
+
+#sindy img{
+    width: 155px;
+}
+
+.bloco-azul {
+    background-color: #6aaff8; /* Cor azul */
+    height: 160px; /* Altura do bloco */
+    width: 100%; /* Largura total */
+    display: flex; /* Centraliza conteúdo no bloco */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    color: white; /* Texto branco */
+    font-size: 18px; /* Tamanho do texto */
+    font-weight: bold; /* Texto em negrito */
+    margin-top: 100px; /* Espaço para compensar o cabeçalho fixo */
+}
+
+/* Estilo para telas médias (tablets) */
 @media (max-width: 768px) {
-    .container {
-        padding: 70%;
-        margin: 20%;
+    body {
+        font-size: 16px;
+        background-color: white;
     }
+}
 
-
-    button {
-        width: 100%;
-        margin-bottom: 10px;
+/* Estilo para telas pequenas (celulares) */
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+        background-color: white;
     }
 }
