@@ -127,28 +127,27 @@ figure {
     background-color: rgb(173, 214, 250);
     border: 1px solid skyblue;
     text-align: center;
-    padding: 5px;
-    margin: 20px;
-    display: flex; /* Adicionando flexbox para centralização */
-    flex-direction: column; /* Organizando o conteúdo verticalmente */
-    align-items: center; /* Centralizando horizontalmente */
-    justify-content: center; /* Centralizando verticalmente */
+    padding: 10px;
+    margin: 20px auto;
+    width: fit-content;
+   
 }
 
 figcaption {
     font-style: italic;
-    margin-top: 2px;
+    margin-top: 5px;
 }
 
 #sindy{
     
-    margin: 0 0 5px 5px;
+    margin: 0 ;
+    display: inline-block;
 }
 
 #sindy img{
     width: 155px;
     display: block; /* Isso garante que a imagem não tenha margem no lado direito */
-    margin: 0 auto; 
+    margin: 0 auto; /* Centraliza a imagem dentro do seu contêiner */
 }
 
 
@@ -212,8 +211,3 @@ img {
         font-size: 1rem;
     }
 }
-
-
-
-
-
