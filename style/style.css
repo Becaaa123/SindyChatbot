@@ -152,23 +152,23 @@ figcaption {
 
 
 .fluxogramaSindy{
-
+    width: 60%;
 }
 
 .alex{
-
+    width: 50%;
 }
 
 .mariaeduarda{
-
+    width: 50%;
 }
 
 .rebeca{
-
+    width: 50%;
 }
 
-.monique{
-
+.monyque{
+    width: 50%;
 }
 /* Animação de Fade-In */
 @keyframes fadeInUp {
@@ -177,16 +177,6 @@ figcaption {
         transform: translateY(0);
     }
 }
-
-
-/* Imagens dentro das seções
-img {
-    width: 100%;
-    max-width: 150px;
-    margin: 20px auto;
-    display: block;
-    border-radius: 50%;
-}  */
 
 
 /* Responsividade */
