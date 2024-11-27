@@ -1,87 +1,138 @@
-body {
-    color: black;
-    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-    margin-left: auto;
-    margin-right: auto;
-    width: 940px;
-}
 
-p {
-    padding: 0 45px;
-    text-indent: 15px;
-}
-
-h1{
-    text-align: center;
-}
-
-h3 {
+/* Resetando margens e padding e definindo a tipografia global */
+* {
     margin: 0;
-    /* Remove margens para alinhar corretamente */
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #BF84D9;
+    color: #333;
+    line-height: 1.6;
+    background-size: cover;
+    padding-top: 80px; /* Ajuste para espaçar o conteúdo do menu fixo */
+}
+
+
+/* Cabeçalho e Menu */
+header {
+    position: relative;
+    background-color: #5c0f7e;
     color: white;
 }
 
-header {
+
+nav {
     position: fixed;
-    /* Fixa no topo da página */
     top: 0;
     left: 0;
     width: 100%;
-    /* Largura total */
-    background-color: #ec71e2;
-    /* Cor de fundo */
-    padding: 35px;
-    text-align: center;
-    /* Centraliza os textos horizontalmente */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    /* Sombra*/
+    background-color: #5c0f7e;
     z-index: 1000;
-    /* Garante que fique acima de outros elementos */
 }
 
-a {
-    color: white;
-    /* Cor padrão do link */
-    text-decoration: none;
-    /* Remove o sublinhado */
+
+nav .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 20px;
 }
 
-a:hover {
-    color: pink;
 
-    /* Cor ao passar o mouse */
-    text-decoration: underline;
-    /* Adiciona sublinhado */
-}
-
-a:active {
-    color: rgb(95, 173, 247);
-    /* Cor quando o link é clicado */
-}
-
-.subtitulos {
+.menu {
+    list-style: none;
     display: flex;
-    /* Usa flexbox para alinhar */
-    justify-content:center;
-    /* Centraliza os subtítulos no eixo horizontal */
-    gap: 20px;
-    /* Espaço entre os subtítulos */
-    flex-wrap: wrap;
-    /* Permite quebrar linha se necessário */
+    justify-content: center;
 }
 
-main {
-    margin-top: 150px;
-    /* Garante que o conteúdo não fique sobreposto ao header */
-    padding: 20px;
+
+.menu li {
+    margin: 0 20px;
 }
 
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+
+.menu li a:hover {
+    color: #9b59b6;
+}
+
+
+/* Seção Hero */
+.hero {
+    background-color: #8540a3;
+    padding: 150px 0 50px; /* Maior padding superior para o efeito de menu fixo */
+    text-align: center;
+}
+
+
+.hero h1 {
+    font-size: 2.8rem;
+    margin-bottom: 15px;
+}
+
+
+.hero p {
+    font-size: 1.3rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+/* Estilo das seções */
+.section {
+    width: 100%;  /* Diminuir a largura das seções */
+    max-width: 1400px;  /* Largura máxima das seções em telas grandes */
+    padding: 80px 20px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8);
+    margin: 50px auto; /* Centraliza a seção */
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+
+/* Títulos e parágrafos */
+.section h2 {
+    font-size: 2.5rem;
+    color: #9b59b6;
+    margin-bottom: 20px;
+}
+
+
+.section p {
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.8;
+    margin: 0 auto;
+    max-width: 900px;
+}
+
+
+.sindy {
+
+}
 figure {
     background-color: rgb(173, 214, 250);
     border: 1px solid skyblue;
     text-align: center;
     padding: 5px;
     margin: 20px;
+    display: flex; /* Adicionando flexbox para centralização */
+    flex-direction: column; /* Organizando o conteúdo verticalmente */
+    align-items: center; /* Centralizando horizontalmente */
+    justify-content: center; /* Centralizando verticalmente */
 }
 
 figcaption {
@@ -90,39 +141,79 @@ figcaption {
 }
 
 #sindy{
-    float: right;
+    
     margin: 0 0 5px 5px;
 }
 
 #sindy img{
     width: 155px;
+    display: block; /* Isso garante que a imagem não tenha margem no lado direito */
+    margin: 0 auto; 
 }
 
-.bloco-azul {
-    background-color: #6aaff8; /* Cor azul */
-    height: 160px; /* Altura do bloco */
-    width: 100%; /* Largura total */
-    display: flex; /* Centraliza conteúdo no bloco */
-    align-items: center; /* Centraliza verticalmente */
-    justify-content: center; /* Centraliza horizontalmente */
-    color: white; /* Texto branco */
-    font-size: 18px; /* Tamanho do texto */
-    font-weight: bold; /* Texto em negrito */
-    margin-top: 100px; /* Espaço para compensar o cabeçalho fixo */
+
+.fluxogramaSindy{
+
 }
 
-/* Estilo para telas médias (tablets) */
+.alex{
+
+}
+
+.mariaeduarda{
+
+}
+
+.rebeca{
+
+}
+
+.monique{
+
+}
+/* Animação de Fade-In */
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Imagens dentro das seções
+img {
+    width: 100%;
+    max-width: 150px;
+    margin: 20px auto;
+    display: block;
+    border-radius: 50%;
+}  */
+
+
+/* Responsividade */
 @media (max-width: 768px) {
-    body {
-        font-size: 16px;
-        background-color: white;
+    .menu {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+
+
+    .section h2 {
+        font-size: 2rem;
+    }
+
+
+    .section p {
+        font-size: 1rem;
     }
 }
 
-/* Estilo para telas pequenas (celulares) */
-@media (max-width: 480px) {
-    body {
-        font-size: 14px;
-        background-color: white;
-    }
-}
+
+
+
+

@@ -1,94 +1,138 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
 
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Chat Sindy para enfermeiras, pronto para ajudar com dúvidas e apoio em tempo real.">
+    <title>Sindy - Chat de Apoio para Enfermeiras</title>
+
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <df-messenger intent="WELCOME" chat-title="Sindy" agent-id="23c5b655-de09-4048-af79-087cfc3e6c07"
+        language-code="pt-br"></df-messenger>
+
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="style/style.css">
-
-    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
-
-<df-messenger
-intent="WELCOME"
-chat-title="Sindy"
-agent-id="23c5b655-de09-4048-af79-087cfc3e6c07"
-language-code="pt-br"
-></df-messenger>
-
-    <title>Sindy</title>
-
 </head>
+
+
 <body>
-    
+
+
     <header>
-        <div class="subtitulos">
-            <h3><a href="#ss">SOBRE A SINDY</h3></a>
-            <h3><a href="#ob">OBJETIVO</h3></a>
-            <h3><a href="#criacao">CRIAÇÃO</h3></a>
-            <h3><a href="#criadores">CRIADORES</h3></a>
-            <h3><a href="https://docs.google.com/forms/d/e/1FAIpQLSclpddcQiHvtDtUlocczZ4iz5G3Piu472d1yMJH8e8BuvpxhQ/viewform?usp=sf_link">FEEDBACK</h3></a>
+        <nav>
+            <div class="container">
+                <ul class="menu">
+                    <li><a href="#sobre">Sobre a Sindy</a></li>
+                    <li><a href="#objetivo">Objetivo</a></li>
+                    <li><a href="#criacao">Criação</a></li>
+                    <li><a href="#criadores">Criadores</a></li>
+                    <li><a
+                            href="https://docs.google.com/forms/d/e/1FAIpQLSclpddcQiHvtDtUlocczZ4iz5G3Piu472d1yMJH8e8BuvpxhQ/viewform?usp=sf_link">Feedback</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="hero">
+            <div class="container">
+                <h1>Bem-vinda ao Sindy</h1>
+                <p>O chat dedicado a ajudar enfermeiras com dúvidas e apoio em tempo real!</p>
+            </div>
         </div>
     </header>
-    
-    <div class="bloco-azul">
-        <p>Bem vindo(a)</p>
-    </div>
 
-    <main>
-        <h1 id="ss">Sobre a Sindy</h1>
 
-        <figure id="sindy">
-            <img src="img/sindy.jpeg" alt="Avatar da Sindy">
+    <!-- Seções -->
+    <section id="sobre" class="section">
+        <div class="content-container">
+            <h2>Sobre a Sindy</h2>
+            <p>A Sindy é um assistente virtual desenvolvido para apoiar enfermeiras no seu trabalho diário,
+                proporcionando ferramentas práticas para otimizar processos e melhorar o atendimento aos pacientes.</p>
+            </br>
+          <figure id="sindy">  
+            <img src="image/sindy.jpg" alt="Sindy" class="Sindy">
+        </div>
+    </section>
 
-            <figcaption>Sindy</figcaption>
-        </figure>
-        <p>
-            A Sindy é uma assistente virtual desenvolvida para apoiar enfermeiras(os)
-            no seu trabalho diário proporcionamdo ferramentas práticas para otimizar 
-            processos e melhorar o atendimento aos pacientes, visando principalmente
-            as crianças e os adolecentes com sofrimento menta,sindromes convulsivas e etc, 
-            em ambiente domiciliar.
-        </p>
-        <h1 id="ob">Objetivo</h1>
-        <p>
-            O chatbot Sindy foi desenvolvido com o propósito de ser uma ferramenta
-            acessível e humanizada, capaz de oferecer suporte informativo e emocional
-            a crianças e adolescentes que enfrentam condições desafiadoras, como
-            síndromes convulsivas graves, dificuldades de locomoção, sequelas
-            neurológicas e sofrimento mental. Além disso, Sindy busca promover a
-            inclusão, a conscientização, o bem-estar e também melhorar a qualidade de
-            vida, tanto dos pacientes quanto de seus cuidadores, proporcionando
-            informações claras e práticas que auxiliem no manejo dessas condições,
-            criando um ambiente de acolhimento para pacientes e suas famílias.
-        </p>
-    
-        <p>
-            Com um design voltado para acessibilidade, o Sindy atende tanto
-            profissionais de saúde, que necessitam de atualizações e orientações
-            técnicas, quanto o público leigo, incluindo familiares, educadores e
-            cuidadores, que precisam de explicações simples e suporte emocional. O
-            chatbot atua como uma ponte de conexão, aproximando diferentes públicos e
-            criando um espaço confiável para o compartilhamento de informações,
-            soluções práticas e suporte contínuo, auxiliando na compreensão e no
-            enfrentamento dos desafios que envolvem essas condições, com foco na
-            empatia e na humanização dos cuidados. Assim, Sindy não apenas informa,
-            mas também inspira empatia e solidariedade, sendo um recurso valioso para
-            todos que lidam direta ou indiretamente com esses temas.
-        </p>
 
-        <h1 id="criacao">Criação</h1>
-        <p>
-            <img src="img/fluxograma.png">
-        </p>
+    <section id="objetivo" class="section">
+        <div class="content-container">
+            <h2>Objetivo</h2>
+            <p>
+                O chatbot Sindy foi desenvolvido com o propósito de ser uma ferramenta
+                acessível e humanizada, capaz de oferecer suporte informativo e emocional
+                a crianças e adolescentes que enfrentam condições desafiadoras, como
+                síndromes convulsivas graves, dificuldades de locomoção, sequelas
+                neurológicas e sofrimento mental. Além disso, Sindy busca promover a
+                inclusão, a conscientização, o bem-estar e também melhorar a qualidade de
+                vida, tanto dos pacientes quanto de seus cuidadores, proporcionando
+                informações claras e práticas que auxiliem no manejo dessas condições,
+                criando um ambiente de acolhimento para pacientes e suas famílias.
+            </p>
+            <p>
+                Com um design voltado para acessibilidade, o Sindy atende tanto
+                profissionais de saúde, que necessitam de atualizações e orientações
+                técnicas, quanto o público leigo, incluindo familiares, educadores e
+                cuidadores, que precisam de explicações simples e suporte emocional. O
+                chatbot atua como uma ponte de conexão, aproximando diferentes públicos e
+                criando um espaço confiável para o compartilhamento de informações,
+                soluções práticas e suporte contínuo, auxiliando na compreensão e no
+                enfrentamento dos desafios que envolvem essas condições, com foco na
+                empatia e na humanização dos cuidados. Assim, Sindy não apenas informa,
+                mas também inspira empatia e solidariedade, sendo um recurso valioso para
+                todos que lidam direta ou indiretamente com esses temas.
 
-        <h1 id="criadores">Criadores</h1>
-        
-    </main>
-    <h2>Ente em contato com a gente:</h2>
+
+            </p>
+        </div>
+    </section>
+
+
+    <section id="criacao" class="section">
+        <div class="content-container">
+            <h2>Criação</h2>
+            <p>A Sindy foi criada com as mais modernas tecnologias de inteligência artificial, proporcionando uma
+                experiência de uso simples, rápida e inteligente.</p></br>
+            <img src="image/fluxogramaSindy.jpg" alt="fluxogramaSindy" class="fluxogramaSindy">
+        </div>
+    </section>
+
+
+    <section id="criadores" class="section">
+        <div class="content-container">
+            <h2>Criadores</h2></br>
+            <h3> Alex Jr </h3></br>
+            <img src="image/alex.jpg" alt="alex" class="alex"></br>
+            <h3>Maria Eduarda</h3></br>
+            <img src="image/duda.jpg" alt="mariaeduarda" class="mariaeduarda"></br>
+            <h3>Monyque</h3></br>
+            <img src="image/monique.jpg" alt="monyque" class="monyque"></br>
+            <h3>Rebeca</h3></br>
+            <img src="image/rebeca.jpg" alt="rebeca" class="rebeca"></br>
+        </div>
+    </section>
+
+
+    <section id="feedback" class="section">
+        <div class="content-container">
+            <h2>Feedback</h2>
+            <p>Tem algo a dizer? Sua opinião é essencial para melhorarmos ainda mais a Sindy. Envie seu feedback para
+                nós.</p>
+        </div>
+    </section>
+
+
 </body>
+
+
 </html>
+
